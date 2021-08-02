@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+*{
+    box-sizing: border-box; margin: 0; padding: 0;
+}
+
+:root{
+    --primary-color: #2CB7DF;
+    --primary-light:#2CB7DF1C;
+    --secondary-color: #258FAE;
+    --ternary-color: #263077;
+    --common-color: #212832;
+    --dark-color:#2D2D32;
+    --description-color:#787887;
+    --footer-color1: #06254D;
+    --footer-color2: #031F42;
+    --light-color:#B3B3B3;
+    --white-color: #fff;
+    --white-light:#C8B9CD;
+    --site-font:'Poppins', sans-serif;
+    
+}
+
+body{
+    font-family:var(--site-font); 
+    font-size: 14px; 
+    color: var(--description-color); 
+    line-height: 21px; 
+    font-weight: normal;
+}
+
+h2, h3, h4, h5, h6{
+    line-height: 46px;
+    color: var(--common-color);
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 54px;
+    color: var(--dark-color);
+    margin: 0;
+    line-height: 66px;
+    font-weight: 500;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 18px;
+    line-height: 22px;
+}
+
+
+
+p{
+    margin: 0; padding: 0; 
+}
+
+
+ul, li{
+    margin: 0; padding: 0;list-style: none;
+}
+a{
+    text-decoration: none;color: var(--dark-color);
+}
+a:hover{
+    text-decoration: none;
+}
+img{
+    margin: 0; padding: 0;
+}
+
+.pt{
+    padding-top: 46px;
+}
+.pb{
+    padding-bottom: 46px;
+}
+
+.container{
+    max-width: 1190px;
+    width: 100%;
+}
+
+.custom_button{
+    margin: 0;  position: relative; z-index: 1;
+    a{
+        width: 212px;
+        height: 56px;
+        border-radius: 5px;
+        background-color: var(--primary-color);
+        color: var(--white-color);
+        font-size: 18px;
+        text-transform: capitalize;
+        font-weight: 500;
+        img{
+            margin-left: 3px;
+        }
+    }
+    &.transparent{
+        a{
+            width: 180px;
+            height: 45px;
+            font-size: 16px;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+            background-color: transparent;
+        }
+        &.no_border_bg{
+            a{
+                width: 147px;
+                background-color: var(--primary-light);
+                border: none;
+            }
+        }
+    }
+    &.small{
+        a{
+            width: 124px;
+            height: 37px;  
+            font-size: 16px;
+            border-radius: 3px;
+        }
+    }
+    &.search_button{
+        width: 132px;
+        height: 52px;
+        cursor: pointer;
+        border: none;
+        outline-style: none;
+        border-radius: 2px;
+        background-color: var(--primary-color);
+        color: var(--white-color);
+        border-radius: 3px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+@media only screen and(max-width:1309px){
+    .custom_button{
+        a{
+            img{
+                width: 15px;
+            }
+        }
+        &.transparent{
+            a{
+                width: 140px;
+                font-size: 14px;
+            }
+            &.no_border_bg{
+                a{
+                    width: 130px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.custom_heading{
+    width: 100%;
+    &.center{
+        text-align: center;
+    }
+    &.left{
+        text-align: left;
+    }
+    h2{
+        color: var(--common-color);
+        font-weight: 500;
+        position: relative;
+        padding-bottom: 10px;
+        margin-bottom: 28px;
+        &::after{
+            background-image: url(../images/design_line.svg);
+            width: 104px;
+            height: 16px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: "";
+        }
+    }
+}
+
+@media only screen and (max-width:500px){
+    .custom_heading{
+        h2{
+            font-size: 20px;
+        }
+    }
+    .pt{
+        padding-top: 26px;
+    }
+    .pb{
+        padding-bottom: 26px;
+    }
+}
+
+
+
+

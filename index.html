@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KindlyCare</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container d-flex align-items-center justify-content-between flex-wrap">
+            <a href="" class="logo"><img src="images/main_logo.png" alt=""></a>
+            <div class="main_nav d-flex align-items-center flex-wrap" id="mobile_menu">
+                <div class="cat_wrap" onclick="cat_button()" id="cat_button">
+                    <div class="custom_button transparent no_border_bg" >
+                        <a href="javascript:void(0)" class="d-flex align-items-center justify-content-center">categories <img src="images/down_arrow.svg" alt=""></a>
+                    </div>
+                    <ul class="cat_list">
+                        <li><a href="">Pharmacy</a></li>
+                        <li><a href="">Medicine</a></li>
+                        <li><a href="">Biology</a></li>
+                        <li><a href="">Medical</a></li>
+                        <li><a href="">Bioinformatics</a></li>
+                        <li><a href="">Emotional Intelligence</a></li>
+                        <li><a href="">Mental Health</a></li>
+                        <li><a href="">Anatomy</a></li>
+                        <li><a href="">Nutrition</a></li>
+                    </ul>
+                </div>
+                
+                <ul class="navigation d-flex align-items-center">
+                    <li><a href="">categories</a></li>
+                    <li><a href="">Catelog</a></li>
+                    <li><a href="">live training</a></li>
+                    <li><a href="">certificate</a></li>
+                </ul>
+                <div class="header_search_box">
+                    <input type="text" placeholder="Search here" id="tags" onclick="auto_complete()" name="" id="">
+                    <button><img src="images/small_search.svg" alt=""></button>
+                    <button class="cross" id="auto_cross" onclick="auto_cross()"><img src="images/cross.png" alt=""></button>
+                    <ul class="auto_complete" id="auto_complete">
+                        <li> <a href=""><img src="images/small_search.png" alt=""><strong>Medical</strong>  Terminology</a> </li>
+                        <li><a href=""><img src="images/small_search.png" alt=""><strong>Medical</strong> Device</a> </li>
+                        <li><a href=""><img src="images/small_search.png" alt=""><strong>Medical</strong> Transcription</a> </li>
+                        <li><a href=""><img src="images/small_search.png" alt=""><strong>Medical</strong> English vocabulary for medical professionals</a> </li>
+                        <li><a href=""><img src="images/chap.svg" alt=""><strong>Medical</strong> Coding Inpatient DRG</a> </li>
+                        <li><a href=""><img src="images/chap.svg" alt=""><strong>Medical</strong> English vocabulary</a> </li>
+                        <li><a href=""><img src="images/file.svg" alt=""><strong>Medical</strong> Transcription</a></li>
+                        <li><a href=""><img src="images/file.svg" alt=""><strong>Medical</strong> Terminology</a> </li>
+                        <li><a href=""><img src="images/file.svg" alt=""><strong>Medical</strong> Device</a> </li>
+                        <li><a href=""><img src="images/file.svg" alt=""><strong>Medical</strong> English vocabulary for medical professionals</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right d-flex align-items-center">
+                <div class="cart"><img src="images/cart_icon.svg" alt=""></div>
+                <div class="custom_button transparent">
+                    <a href="" class="d-flex align-items-center justify-content-center">Login/Register</a>
+                </div>
+                <div class="ham_cross_menu_back d-flex align-items-center justify-content-center" id="hamburger" onclick="ham_click()">
+                    <img src="images/hamburger.png" class="ham" alt="">
+                    <img src="images/cross.png" class="cross" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero_back d-flex align-items-center" style="background-image: url(images/banner.png);">
+        <div class="container">
+            <h1><span class="ternary">Learn. </span><span class="secondary">Apply. </span><span class="primary">Retain.</span><br>Gain Skill In Healthcare</h1>
+            <p>Take an online course and improve your hands-on robotics skills through building. Our programs are designed to take the absolute beginner and turn them into a robot builder!</p>
+            <!--<div class="search_back">
+                <input type="text" name="" id="">
+                <input type="submit" class="custom_button search_button" value="Search">
+            </div>-->
+        </div>
+    </div>
+
+    <div class="course_section pt">
+        <div class="container">
+            <div class="custom_heading left d-flex align-items-center justify-content-between">
+                <h2>New Courses</h2>
+                <a href="" class="view">View All</a>
+            </div>
+            <div class="main_section">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 common">
+                        <div class="portion">
+                            <div class="image_back">
+                                <img src="images/nc1.jpeg" alt="">
+                            </div>
+                            <div class="details">
+                                <span class="tag" style="background-color: #E8F8FD; color:#2CB7DF;">Pharmacy</span>
+                                <h3>Become a Pharmacy Technician</h3>
+                                <ul class="bottom_details">
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/clock.svg" alt="">20min
+                                        </div>
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/graduate.svg" alt="">Expert Level
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port">Price</div>
+                                        <div class="port d-flex align-items-center">
+                                            <span>$250</span>
+                                            <i>$1000</i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 common">
+                        <div class="portion">
+                            <div class="image_back">
+                                <img src="images/nc2.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <span class="tag" style="background-color: #C7F1DD; color:#00C067;">Nutrition</span>
+                                <h3>UiPath - Level 1 Robotic Process Automation</h3>
+                                <ul class="bottom_details">
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/clock.svg" alt="">20min
+                                        </div>
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/graduate.svg" alt="">Expert Level
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port">Price</div>
+                                        <div class="port d-flex align-items-center">
+                                            <span>$250</span>
+                                            <i>$1000</i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 common">
+                        <div class="portion">
+                            <div class="image_back">
+                                <img src="images/nc3.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <span class="tag" style="background-color: #FFE2EF; color:#FA2185;">Dentist</span>
+                                <h3>UiPath - Level 1 Robotic Process Automation</h3>
+                                <ul class="bottom_details">
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/clock.svg" alt="">20min
+                                        </div>
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/graduate.svg" alt="">Expert Level
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port">Price</div>
+                                        <div class="port d-flex align-items-center">
+                                            <span>$250</span>
+                                            <i>$1000</i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 common">
+                        <div class="portion">
+                            <div class="image_back">
+                                <img src="images/nc4.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <span class="tag" style="background-color: #E8F8FD; color:#2CB7DF;">Pharmacy</span>
+                                <h3>UiPath - Level 1 Robotic Process Automation</h3>
+                                <ul class="bottom_details">
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/clock.svg" alt="">20min
+                                        </div>
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/graduate.svg" alt="">Expert Level
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port">Price</div>
+                                        <div class="port d-flex align-items-center">
+                                            <span>$250</span>
+                                            <i>$1000</i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="course_section pt">
+        <div class="container">
+            <div class="custom_heading left d-flex align-items-center justify-content-between">
+                <h2>Featured Courses</h2>
+                <a href="" class="view">View All</a>
+            </div>
+            <div class="main_section">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 common">
+                        <div class="portion">
+                            <div class="image_back">
+                                <img src="images/nc1.jpeg" alt="">
+                            </div>
+                            <div class="details">
+                                <span class="tag" style="background-color: #E8F8FD; color:#2CB7DF;">Pharmacy</span>
+                                <h3>Become a Pharmacy Technician</h3>
+                                <ul class="bottom_details">
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/clock.svg" alt="">20min
+                                        </div>
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/graduate.svg" alt="">Expert Level
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port">Price</div>
+                                        <div class="port d-flex align-items-center">
+                                            <span>$250</span>
+                                            <i>$1000</i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 common">
+                        <div class="portion">
+                            <div class="image_back">
+                                <img src="images/nc2.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <span class="tag" style="background-color: #C7F1DD; color:#00C067;">Nutrition</span>
+                                <h3>UiPath - Level 1 Robotic Process Automation</h3>
+                                <ul class="bottom_details">
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/clock.svg" alt="">20min
+                                        </div>
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/graduate.svg" alt="">Expert Level
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port">Price</div>
+                                        <div class="port d-flex align-items-center">
+                                            <span>$250</span>
+                                            <i>$1000</i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 common">
+                        <div class="portion">
+                            <div class="image_back">
+                                <img src="images/nc3.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <span class="tag" style="background-color: #FFE2EF; color:#FA2185;">Dentist</span>
+                                <h3>UiPath - Level 1 Robotic Process Automation</h3>
+                                <ul class="bottom_details">
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/clock.svg" alt="">20min
+                                        </div>
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/graduate.svg" alt="">Expert Level
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port">Price</div>
+                                        <div class="port d-flex align-items-center">
+                                            <span>$250</span>
+                                            <i>$1000</i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 common">
+                        <div class="portion">
+                            <div class="image_back">
+                                <img src="images/nc4.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <span class="tag" style="background-color: #E8F8FD; color:#2CB7DF;">Pharmacy</span>
+                                <h3>UiPath - Level 1 Robotic Process Automation</h3>
+                                <ul class="bottom_details">
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/clock.svg" alt="">20min
+                                        </div>
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/graduate.svg" alt="">Expert Level
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port">Price</div>
+                                        <div class="port d-flex align-items-center">
+                                            <span>$250</span>
+                                            <i>$1000</i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="demand_skill_section pb">
+        <div class="container d-flex align-items-center" 
+        style="background-image: url(images/demand_skill.png);">
+            <div>
+                <h2>Gain In-demand Skills .<br>Level Up With Us.</h2>
+                <div class="custom_button"><a href="" class="d-flex align-items-center justify-content-center">Search Courses</a></div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="course_section list pt">
+        <div class="container">
+            <div class="custom_heading left d-flex align-items-center justify-content-between">
+                <h2>Live Courses</h2>
+                <a href="" class="view">View All</a>
+            </div>
+            <div class="main_section">
+                <div class="row">
+                    <div class="col-lg-6 common">
+                        <div class="portion">
+                            <div class="image_back">
+                                <img src="images/lc1.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <span class="tag" style="background-color: #E8F8FD; color:#2CB7DF;">Pharmacy</span>
+                                <h3>UiPath - Level 1 Robotic Process Automation</h3>
+                                <ul class="bottom_details">
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/clock.svg" alt="">20min
+                                        </div>
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/graduate.svg" alt="">Expert Level
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div>
+                                          <div class="port">Price</div>
+                                            <div class="port d-flex align-items-center">
+                                                <span>$250</span>
+                                                <i>$1000</i>
+                                            </div>  
+                                        </div>
+                                        <div class="custom_button small"><a href="" class="d-flex align-items-center justify-content-center">Book Now</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 common">
+                        <div class="portion">
+                            <div class="image_back">
+                                <img src="images/lc2.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <span class="tag" style="background-color: #C7F1DD; color:#00C067;">Nutrition</span>
+                                <h3>UiPath - Level 1 Robotic Process Automation</h3>
+                                <ul class="bottom_details">
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/clock.svg" alt="">20min
+                                        </div>
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/graduate.svg" alt="">Expert Level
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div>
+                                          <div class="port">Price</div>
+                                            <div class="port d-flex align-items-center">
+                                                <span>$250</span>
+                                                <i>$1000</i>
+                                            </div>  
+                                        </div>
+                                        <div class="custom_button small"><a href="" class="d-flex align-items-center justify-content-center">Book Now</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 common">
+                        <div class="portion">
+                            <div class="image_back">
+                                <img src="images/lc3.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <span class="tag" style="background-color: #FFE2EF; color:#FA2185;">Dentist</span>
+                                <h3>UiPath - Level 1 Robotic Process Automation</h3>
+                                <ul class="bottom_details">
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/clock.svg" alt="">20min
+                                        </div>
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/graduate.svg" alt="">Expert Level
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div>
+                                          <div class="port">Price</div>
+                                            <div class="port d-flex align-items-center">
+                                                <span>$250</span>
+                                                <i>$1000</i>
+                                            </div>  
+                                        </div>
+                                        <div class="custom_button small"><a href="" class="d-flex align-items-center justify-content-center">Book Now</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 common">
+                        <div class="portion">
+                            <div class="image_back">
+                                <img src="images/lc4.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <span class="tag" style="background-color: #E8F8FD; color:#2CB7DF;">Pharmacy</span>
+                                <h3>UiPath - Level 1 Robotic Process Automation</h3>
+                                <ul class="bottom_details">
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/clock.svg" alt="">20min
+                                        </div>
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/graduate.svg" alt="">Expert Level
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div>
+                                          <div class="port">Price</div>
+                                            <div class="port d-flex align-items-center">
+                                                <span>$250</span>
+                                                <i>$1000</i>
+                                            </div>  
+                                        </div>
+                                        <div class="custom_button small"><a href="" class="d-flex align-items-center justify-content-center">Book Now</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="course_section cv pt">
+        <div class="container">
+            <div class="custom_heading left d-flex align-items-center justify-content-between">
+                <h2>Course Viewed</h2>
+                <a href="" class="view">View All</a>
+            </div>
+            <div class="main_section">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 common">
+                        <div class="portion">
+                            <div class="image_back">
+                                <img src="images/cv1.jpeg" alt="">
+                            </div>
+                            <div class="details">
+                                <span class="tag" style="background-color: #E8F8FD; color:#2CB7DF;">Pharmacy</span>
+                                <h3>Become a Pharmacy Technician</h3>
+                                <ul class="bottom_details">
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/clock.svg" alt="">20min
+                                        </div>
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/graduate.svg" alt="">Expert Level
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port">Price</div>
+                                        <div class="port d-flex align-items-center">
+                                            <span>$250</span>
+                                            <i>$1000</i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 common">
+                        <div class="portion">
+                            <div class="image_back">
+                                <img src="images/cv2.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <span class="tag" style="background-color: #C7F1DD; color:#00C067;">Nutrition</span>
+                                <h3>UiPath - Level 1 Robotic Process Automation</h3>
+                                <ul class="bottom_details">
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/clock.svg" alt="">20min
+                                        </div>
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/graduate.svg" alt="">Expert Level
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port">Price</div>
+                                        <div class="port d-flex align-items-center">
+                                            <span>$250</span>
+                                            <i>$1000</i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 common">
+                        <div class="portion">
+                            <div class="image_back">
+                                <img src="images/cv3.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <span class="tag" style="background-color: #FFE2EF; color:#FA2185;">Dentist</span>
+                                <h3>UiPath - Level 1 Robotic Process Automation</h3>
+                                <ul class="bottom_details">
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/clock.svg" alt="">20min
+                                        </div>
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/graduate.svg" alt="">Expert Level
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port">Price</div>
+                                        <div class="port d-flex align-items-center">
+                                            <span>$250</span>
+                                            <i>$1000</i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 common">
+                        <div class="portion">
+                            <div class="image_back">
+                                <img src="images/cv4.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <span class="tag" style="background-color: #E8F8FD; color:#2CB7DF;">Pharmacy</span>
+                                <h3>UiPath - Level 1 Robotic Process Automation</h3>
+                                <ul class="bottom_details">
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/clock.svg" alt="">20min
+                                        </div>
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/graduate.svg" alt="">Expert Level
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port">Price</div>
+                                        <div class="port d-flex align-items-center">
+                                            <span>$250</span>
+                                            <i>$1000</i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="top">
+            <div class="container d-flex align-items-center justify-content-between flex-wrap">
+                <h2>Gain In-demand Skills . Level Up With Us.</h2>
+                <div class="custom_button"><a href="" class="d-flex align-items-center justify-content-center">Book Now</a></div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container d-flex align-items-center justify-content-between flex-wrap">
+                <a href="" class="logo"><img src="images/footer_logo.png" alt=""></a>
+                <div class="ft_menu d-flex">
+                    <li><a href="">Terms & Condition</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Education Services Policies</a></li>
+                </div>
+            </div>
+        </div>
+        <div class="copy d-flex justify-content-center">Copyright © 2021 robotics, Inc.</div>
+    </footer>
+
+    
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

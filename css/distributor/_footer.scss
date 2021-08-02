@@ -1,0 +1,109 @@
+footer{
+    width: 100%;
+    margin-top: 22px;
+    background-color: var(--footer-color1);
+    .top{
+        padding: 35px 0 30px;
+        h2{
+            color: #fff;
+            font-weight: 500;
+        }
+    }
+    
+    .bottom{
+        background-color: var(--footer-color2);
+        border-bottom: #eeeeee 2px solid;
+        padding: 35px 0 30px;
+        .ft_menu{
+            li{
+                margin-right: 48px;
+                &:last-child{
+                    margin-right: 0;
+                }
+                a{
+                    color: #C8B9CD;
+                    text-transform: capitalize;
+                    font-size: 18px;
+                }
+            }
+        }
+    }  
+    .copy{
+        padding: 24px 0;
+        font-size: 14px;
+        color: #C8B9CD;
+    } 
+}
+
+@media only screen and (max-width:1279px){
+    footer{
+        .top{
+            h2{
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:779px){
+    footer{
+        .top{
+            .container{
+                flex-direction: column;
+                display: flex;
+                text-align: center;
+            }
+            h2{
+                font-size: 20px;
+            }
+        }
+        .bottom{
+            .container{
+                flex-direction: column;
+                display: flex;
+            }
+            .logo{
+                margin-bottom: 30px;
+            }
+            .ft_menu{
+                justify-content: space-between;
+                width: 100%;
+                flex-wrap: wrap;
+                li{
+                    margin-right: 0;
+                    a{
+                        font-size: 14px;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+
+@media only screen and (max-width:450px){
+    footer{
+        .top{
+            padding: 14px 0 30px;
+            h2{
+                font-size: 14px;
+            }
+        }
+        .bottom{
+            padding: 20px 0 10px;
+            .ft_menu{
+                li{
+                    flex: 0 0 100%;
+                    display: flex;
+                    margin-bottom:15px;
+                    justify-content: center;
+                    a{
+                        font-size: 14px;
+                    }
+                }
+            }
+            
+        }
+    }
+}
