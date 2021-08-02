@@ -25,3 +25,12 @@ function cat_button(){
     cat_button.classList.toggle('active');
 }
 
+function mobileSearchPanel(){
+    var mobileSearchPanel= document.getElementById('mobileSearchPanel');
+    mobileSearchPanel.classList.add('active');
+}
+function mobile_cross(){
+    var mobileSearchPanel= document.getElementById('mobileSearchPanel');
+    mobileSearchPanel.classList.remove('active');
+}
+

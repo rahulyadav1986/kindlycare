@@ -61,6 +61,17 @@
             </div>
             <div class="right d-flex align-items-center">
                 <div class="cart"><img src="images/cart_icon.svg" alt=""></div>
+                <div onclick="mobileSearchPanel()" class="mobile_search d-flex align-items-center justify-content-center"><img src="images/small_search.png" alt=""></div>
+                <div id="mobileSearchPanel" class="mobile_search_panel d-flex align-items-center justify-content-center">
+                    <div class="main_panel d-flex align-items-center justify-content-center">
+                        <button class="mobile_cross d-flex align-items-center justify-content-center" id="mobile_cross" onclick="mobile_cross()"><img src="images/cross.png" alt=""></button>
+                        <div class="header_search_box">
+                            <input type="text" placeholder="Search here" id="tags" onclick="auto_complete()" name="" id="">
+                            <button><img src="images/small_search.svg" alt=""></button>
+                            
+                        </div>
+                    </div>
+                </div>
                 <div class="custom_button transparent">
                     <a href="" class="d-flex align-items-center justify-content-center">Login/Register</a>
                 </div>
@@ -219,7 +230,7 @@
                     <div class="col-lg-3 col-md-6 common">
                         <div class="portion">
                             <div class="image_back">
-                                <img src="images/nc1.jpeg" alt="">
+                                <img src="images/fc1.jpeg" alt="">
                             </div>
                             <div class="details">
                                 <span class="tag" style="background-color: #E8F8FD; color:#2CB7DF;">Pharmacy</span>
@@ -247,7 +258,7 @@
                     <div class="col-lg-3 col-md-6 common">
                         <div class="portion">
                             <div class="image_back">
-                                <img src="images/nc2.jpg" alt="">
+                                <img src="images/fc2.jpg" alt="">
                             </div>
                             <div class="details">
                                 <span class="tag" style="background-color: #C7F1DD; color:#00C067;">Nutrition</span>
@@ -275,7 +286,7 @@
                     <div class="col-lg-3 col-md-6 common">
                         <div class="portion">
                             <div class="image_back">
-                                <img src="images/nc3.jpg" alt="">
+                                <img src="images/fc3.jpg" alt="">
                             </div>
                             <div class="details">
                                 <span class="tag" style="background-color: #FFE2EF; color:#FA2185;">Dentist</span>
@@ -303,7 +314,7 @@
                     <div class="col-lg-3 col-md-6 common">
                         <div class="portion">
                             <div class="image_back">
-                                <img src="images/nc4.jpg" alt="">
+                                <img src="images/fc4.jpg" alt="">
                             </div>
                             <div class="details">
                                 <span class="tag" style="background-color: #E8F8FD; color:#2CB7DF;">Pharmacy</span>
@@ -610,7 +621,8 @@
         <div class="top">
             <div class="container d-flex align-items-center justify-content-between flex-wrap">
                 <h2>Gain In-demand Skills . Level Up With Us.</h2>
-                <div class="custom_button"><a href="" class="d-flex align-items-center justify-content-center">Book Now</a></div>
+                <div class="custom_button">
+                    <a href="" class="d-flex align-items-center justify-content-center">Start Learning Now</a></div>
             </div>
         </div>
         <div class="bottom">
