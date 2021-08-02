@@ -974,6 +974,9 @@ header .right .ham_cross_menu_back.active img.ham {
   .course_section .main_section .portion {
     margin-bottom: 26px;
   }
+  .course_section .main_section .portion .image_back img {
+    height: 240px;
+  }
   .course_section.list .main_section .portion {
     padding-left: 190px;
   }
@@ -992,7 +995,7 @@ header .right .ham_cross_menu_back.active img.ham {
     height: auto;
   }
   .course_section.list .main_section .portion .image_back img {
-    height: 158px;
+    height: 240px;
   }
 }
 

@@ -143,6 +143,11 @@
         .main_section {
             .portion{
                 margin-bottom: 26px;
+                .image_back{
+                    img{
+                        height: 240px;
+                    }
+                }
             }
         }
         &.list{
@@ -170,7 +175,7 @@
                         width: 100%;
                         height: auto;
                         img{
-                            height: 158px;
+                            height: 240px;
                         }
                     }
                 }
