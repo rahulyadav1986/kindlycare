@@ -21,6 +21,7 @@
     --white-light:#C8B9CD;
     --site-font:'Poppins', sans-serif;
     
+    
 }
 
 body{
@@ -87,6 +88,7 @@ img{
 
 .custom_button{
     margin: 0;  position: relative; z-index: 1;
+    
     a{
         width: 212px;
         height: 56px;
@@ -137,6 +139,35 @@ img{
         border-radius: 3px;
         font-size: 18px;
         font-weight: 500;
+    }
+    .search_button{
+        width: 132px;
+        height: 52px;
+        cursor: pointer;
+        border: none;
+        outline-style: none;
+        border-radius: 2px;
+        background-color: var(--primary-color);
+        color: var(--white-color);
+        border-radius: 3px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .all_button{
+        width: 212px;
+        height: 56px;
+        border-radius: 5px;
+        background-color: var(--primary-color);
+        color: var(--white-color);
+        font-size: 18px;
+        text-transform: capitalize;
+        font-weight: 500;
+        border: none;
+        outline-style: none;
+        cursor: pointer;
+        img{
+            margin-left: 3px;
+        }
     }
 }
 

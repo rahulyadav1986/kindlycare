@@ -1,0 +1,190 @@
+.hero_back_inner{
+    width: 100%;
+    height: 200px;
+    background-color: #002A4FDE;
+    &.live{
+        img{
+            margin-right: 15px;
+        }
+        h1{
+            margin-bottom: 8px;
+        }
+    }
+    p{
+        font-size: 20px;
+        color: #D0D0D0;
+        line-height: 30px;
+        margin: 0;
+    }
+    h1{
+        color: var(--white-color);
+        font-size: 30px;
+        line-height: 46px;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+    .hero_search{
+        width: 100%;
+        .search_box{
+            max-width: 963px;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 0 15px 0 54px;
+            position: relative;
+            margin-right: 26px;
+            position: relative;
+            img{
+                cursor: pointer;
+                position: absolute;
+                left: 17px;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                width: 34px;
+            }
+        }
+        input[type="search"]{
+            width: 100%;
+            height: 50px;
+            font-size: 16px;
+            background-color: transparent;
+            border: none;
+            outline-style: none;
+            ::placeholder{
+                color: var(--description-color);
+            }
+        }
+        .custom_button{
+            .search_button{
+                width: 170px;
+                height: 50px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:500px){
+    .hero_back_inner{
+        h1{
+            font-size: 20px;
+        }
+        &.live{
+            h1{
+                justify-content: center;
+            }
+            p{
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+        text-align: center;
+        .hero_search{
+            flex-direction: column;
+            .search_box{
+                max-width: 100%;
+                margin-right: 0;
+                input[type="search"]{
+                    font-size: 12px;
+                }
+               
+            }
+            .custom_button{
+                margin-top: 20px;
+                width: 100%;
+                .search_button{
+                    width: 100%;
+                }
+            }
+           
+        }
+    }
+}
+
+@media only screen and (max-width:450px){
+    .hero_back_inner{
+        text-align: center;
+        .hero_search{
+            flex-direction: column;
+            width: 100%;
+            justify-content: flex-start;
+            .search_box{
+                max-width: 100%;
+                margin-right: 0;
+                padding-left: 28px;
+                img{
+                    width: 22px;
+                    left: 5px;
+                }
+            }
+            .custom_button{
+                margin-top: 20px;
+                width: 100%;
+                .search_button{
+                    width: 100%;
+                }
+            }
+           
+        }
+    }
+}
+
+.others_page_container{
+    width: 100%;
+}
+
+.custom_bedcrumb{
+    width: 100%;
+    margin-bottom: 20px;
+    li{
+        margin-right: 20px;
+        color: rgba(255,255,255,.88);
+        font-size: 14px;
+        &:first-child{
+            a{
+                padding-left: 30px;
+                &::after{
+                    background-image: url(../images/right_big_arrow.png);
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    width: 18px;
+                    height: 18px;
+                    content: "";
+                }
+            }
+        }
+        a{
+            padding-right: 24px; font-size: 14px;
+            color: rgba(255,255,255,.88);
+            position: relative;
+            &::before{
+                background-image: url(../images/right-arrow.png);
+                width: 10px;
+                height: 10px;
+                background-size: contain;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+                content: "";
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:779px){
+    .custom_bedcrumb{
+        li{
+            margin-bottom: 10px;
+        }
+    }
+}
+@media only screen and (max-width:500px){
+    .custom_bedcrumb{
+       justify-content: center;
+    }
+}

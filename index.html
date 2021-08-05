@@ -64,7 +64,8 @@
                 <div onclick="mobileSearchPanel()" class="mobile_search d-flex align-items-center justify-content-center"><img src="images/small_search.png" alt=""></div>
                 <div id="mobileSearchPanel" class="mobile_search_panel d-flex align-items-center justify-content-center">
                     <div class="main_panel d-flex align-items-center justify-content-center">
-                        <button class="mobile_cross d-flex align-items-center justify-content-center" id="mobile_cross" onclick="mobile_cross()"><img src="images/cross.png" alt=""></button>
+                        <button class="mobile_cross d-flex align-items-center justify-content-center"
+                         id="mobile_cross" onclick="mobile_cross()"><img src="images/cross.png" alt=""></button>
                         <div class="header_search_box">
                             <input type="text" placeholder="Search here" id="tags" onclick="auto_complete()" name="" id="">
                             <button><img src="images/small_search.svg" alt=""></button>
@@ -73,7 +74,7 @@
                     </div>
                 </div>
                 <div class="custom_button transparent">
-                    <a href="" class="d-flex align-items-center justify-content-center">Login/Register</a>
+                    <a href="javascript:void(0)" onclick="log_click()" class="d-flex align-items-center justify-content-center">Login/Register</a>
                 </div>
                 <div class="ham_cross_menu_back d-flex align-items-center justify-content-center" id="hamburger" onclick="ham_click()">
                     <img src="images/hamburger.png" class="ham" alt="">
@@ -637,6 +638,85 @@
         </div>
         <div class="copy d-flex justify-content-center">Copyright © 2021 robotics, Inc.</div>
     </footer>
+
+    <div class="login_register_back d-flex align-items-center justify-content-center" 
+    id="login_register_back">
+        <div class="ovarlay" onclick="mobile_log_cross()"></div>
+        <div class="main_area">
+            <div class="mobile_log_cross" onclick="mobile_log_cross()"><img src="images/cross.png" alt=""></div>
+            <a href="" class="logo"><img src="images/main_big_logo.png" alt=""></a>
+            <div class="social_login_back">
+                <div class="log_text" id="log_text">
+                    <h2 class="login_text">Login To Your Account,</h2>
+                    <h2 class="register_text">Create New Account,</h2>
+                    <h2 class="pass_text">Forgot Your Password?</h2>
+                </div>
+                <div class="social_del_back" id="social_del_back">
+                    <div class="custom_button social_login d-flex align-items-center">
+                        <div class="all_button d-flex align-items-center justify-content-center">
+                            <img src="images/g_logo.png" alt="">
+                            Google
+                        </div>
+                        <div class="all_button facebook d-flex align-items-center justify-content-center">
+                            <img src="images/f_logo.png" alt="">
+                            Facebook
+                        </div>
+                    </div>
+                    <div class="or">
+                       <span>Or Login with Your Email</span>  
+                    </div>
+                </div>
+            </div>
+            <div class="main_log_in_area" id="main_login_area">
+                <div class="login">
+                    <div class="portion">
+                        <label for="">Email Address</label>
+                        <input type="text" class="input_log" name="" id="">
+                    </div>
+                    <div class="portion">
+                        <div class="pass_for d-flex align-items-center justify-content-between">
+                            <label for="">Password</label>
+                            <a href="javascript:void(0)" id="forgot" onclick="forgot()">Forgot Password?</a>
+                        </div>
+                        <input type="password" class="input_log" name="" id="">
+                    </div>
+                    <div class="custom_button">
+                        <input type="submit" class="all_button" value="Login">
+                    </div>
+                    <p>Don't have an account yet? <a href="javascript:void(0)" onclick="register()">Register Now</a></p>
+                </div>
+                <div class="forgot_pass">
+                    <div class="portion">
+                        <label for="">Email Address</label>
+                        <input type="text" class="input_log" name="" id="">
+                    </div>
+                    
+                    <div class="custom_button">
+                        <input type="submit" class="all_button" value="Get New Password">
+                    </div>
+                    <p>Don't have an account yet? <a href="javascript:void(0)" onclick="register()">Register Now</a></p>
+                </div>
+                <div class="register">
+                    <div class="portion">
+                        <label for="">Your Full Name</label>
+                        <input type="text" class="input_log" name="" id="">
+                    </div>
+                    <div class="portion">
+                        <label for="">Email Address</label>
+                        <input type="text" class="input_log" name="" id="">
+                    </div>
+                    <div class="portion">
+                        <label for="">Password</label>
+                        <input type="password" class="input_log" name="" id="">
+                    </div>
+                    <div class="custom_button">
+                        <input type="submit" class="all_button" value="Create An Account">
+                    </div>
+                    <p>Already Have An Account? <a href="javascript:void(0)" onclick="login()">Login Now</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     
 
