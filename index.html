@@ -20,7 +20,11 @@
             <div class="main_nav d-flex align-items-center flex-wrap" id="mobile_menu">
                 <div class="cat_wrap" onclick="cat_button()" id="cat_button">
                     <div class="custom_button transparent no_border_bg" >
-                        <a href="javascript:void(0)" class="d-flex align-items-center justify-content-center">categories <img src="images/down_arrow.svg" alt=""></a>
+                        <a href="javascript:void(0)" class="d-flex align-items-center justify-content-center">
+                            categories 
+                            <img src="images/down_arrow.svg" alt="">  
+                            <img src="images/up_arrow.svg" class="second" alt="">  
+                        </a>
                     </div>
                     <ul class="cat_list">
                         <li><a href="">Pharmacy</a></li>
@@ -60,7 +64,66 @@
                 </div>
             </div>
             <div class="right d-flex align-items-center">
-                <div class="cart"><img src="images/cart_icon.svg" alt=""></div>
+                <div class="cart">
+                    <img src="images/cart_icon.svg" onclick="cart_pop_up_section()" alt="">
+                    <div class="cart_pop_up_section" id="cart_pop_up_section">
+                        <div class="portion">
+                            <div class="image_back">
+                                <img src="images/lc1.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <span class="tag" style="background-color: #E8F8FD; color:#2CB7DF;">Pharmacy</span>
+                                <h3>UiPath - Level 1 Robotic Process Automation</h3>
+                                <ul class="bottom_details">
+                                    <li class="d-flex align-items-center">
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/clock.svg" alt="">20min
+                                        </div>
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/graduate.svg" alt="">Expert Level
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port">Price</div>
+                                        <div class="port d-flex align-items-center">
+                                            <span>$250</span>
+                                            <i>$1000</i>
+                                        </div>  
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="portion">
+                            <div class="image_back">
+                                <img src="images/lc1.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <span class="tag" style="background-color: #E8F8FD; color:#2CB7DF;">Pharmacy</span>
+                                <h3>UiPath - Level 1 Robotic Process Automation</h3>
+                                <ul class="bottom_details">
+                                    <li class="d-flex align-items-center">
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/clock.svg" alt="">20min
+                                        </div>
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/graduate.svg" alt="">Expert Level
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port">Price</div>
+                                        <div class="port d-flex align-items-center">
+                                            <span>$250</span>
+                                            <i>$1000</i>
+                                        </div>  
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="custom_button">
+                            <a href="" class="all_button d-flex align-items-center justify-content-center">View All <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
                 <div onclick="mobileSearchPanel()" class="mobile_search d-flex align-items-center justify-content-center"><img src="images/small_search.png" alt=""></div>
                 <div id="mobileSearchPanel" class="mobile_search_panel d-flex align-items-center justify-content-center">
                     <div class="main_panel d-flex align-items-center justify-content-center">
@@ -732,6 +795,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/jquery.slicknav.min.js"></script>
     <script src="js/owl.carousel.js"></script>
+    <script src="https://kit.fontawesome.com/a992d6b247.js" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
 
 </body>

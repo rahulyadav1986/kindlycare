@@ -1,0 +1,346 @@
+.hero_course_syllabus{
+    width: 100%;
+    position: relative;
+    .banner_bg{
+        width: 100%;
+        height: 606px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .container{
+        padding-top: 120px;
+    }
+    .tag_details{
+        margin-top: 20px;
+        .port{
+            margin-right: 52px;
+            &:last-child{
+                margin-right: 0;
+                img{
+                    height: 28px;
+                }
+            }
+            color: var(--white-color);
+            span{
+                color: rgba(255,255,255,.71);
+                margin-right: 5px;
+            }
+            img{
+                margin-right: 10px;
+                height: 20px;
+            }
+        }
+    }
+    .sticky{
+        position: sticky;
+        top: 20px;
+    }
+}
+
+
+.hero_course_syllabus{
+    h1{
+        color: #fff;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 39px;
+        margin-top: 15px;
+    }
+    p{
+        font-size: 16px;
+        color: #CECECE;
+        line-height: 25px;
+        padding-right: 37px;
+        margin-top: 10px;
+    }
+    .video_back{
+        width: 100%;
+        background-color: var(--white-color);
+        padding: 18px;
+        box-shadow: 0px 2px 28px #90909029;
+        border-radius: 4px;
+    }
+    .main_video{
+        width: 100%;
+        position: relative;
+        .play{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            cursor: pointer;
+            margin-bottom: auto;
+        }
+        .video_avator{
+            width: 100%;
+            height: 303px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        margin-bottom: 26px;
+    }
+    .custom_button{
+        .all_button{
+            width: 100%;
+            height: 64px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        &.transparent{
+            margin-top: 13px;
+            a{
+                width: 100%;
+                height: 64px;
+                font-size: 20px;
+                font-weight: 500;
+                img{
+                    margin-right: 4px;
+                }
+            }
+        }
+    }
+}
+
+.course_syllabus_back{
+    width: 100%;
+    margin-top: 118px;
+    .syllabus_section{
+        width: 100%;
+        h2{
+            font-size: 30px;
+            font-weight: 500;
+        }
+        p{
+            font-size: 16px;
+            color: #7B7F88;
+            margin: 0;
+        }
+    }
+}
+
+
+.course_accordion_back{
+    margin-top: 30px;
+    .accordion{
+        .card{
+            border: none;
+            margin-bottom: 15px;
+            .card-header{
+                background-color: #F8F8FB;
+                width: 100%;
+                padding: 5.5px 0 5.5px 30px;
+                border: none;
+                position: relative;
+                cursor: pointer;
+                h3{
+                    font-size: 16px;
+                    flex-basis: 73%;
+                    span{
+                        width: 12px;
+                        height: 14px;
+                        background-color: #7B7F88;
+                        clip-path: polygon(100% 50%, 0 0, 0 100%);
+                        margin-right: 14px;
+                    }
+                }
+                h4{
+                    font-size: 16px;
+                    color: #7B7F88;
+                    flex-basis: 27%;
+                }
+                .icon{
+                    position: absolute;
+                    background-image: url(../images/angle-down.png);
+                    width: 17px;
+                    height: 11px;
+                    background-size: contain;
+                    position: absolute;
+                    right: 40px;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    cursor: pointer;
+                    &.arrow_down{
+                        transform: rotate(-180deg);
+                    }
+                }
+            }
+            .card-body{
+                background-color: #F8F8FB;
+            }
+        }
+    }
+}
+
+.out_come_section{
+    width: 100%;
+    margin-top: 30px;
+    h2{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    ul{
+        &.list{
+            width: 100%;
+            li{
+                padding-left: 30px;
+                font-size: 16px;
+                color: #7B7F88;
+                line-height: 25px;
+                margin-bottom: 25px;
+                position: relative;
+                &::before{
+                    width: 14px;
+                    height: 10px;
+                    background-image: url(../images/check.png);
+                    background-size: contain;
+                    position: absolute;
+                    top: 8px;
+                    left: 0;
+                    content: "";
+                }
+            }
+        }
+    }
+}
+
+.similar_courses{
+    width: 100%;
+    margin-top: 30px;
+    h2{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .course_section{
+        &.list{
+            .portion{
+                margin-bottom: 30px;
+                .bottom_details{
+                    li{
+                        &:first-child{
+                            .port{
+                                margin-right: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.mobile_banner{
+    display: none;
+    background-color: #000;
+}
+@media only screen and (max-width:500px){
+    .hero_course_syllabus {
+        .banner_bg{
+            display: none;
+        }
+        .mobile_banner{
+            width: 100%;
+            height: 700px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+        }
+       
+    }
+    .hero_course_syllabus .container{
+        padding-top: 60px;
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            padding-right: 0;
+        }
+        .tag_details{
+            justify-content: center;
+        }
+
+    }
+    .custom_bedcrumb{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .hero_course_syllabus h1{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .hero_course_syllabus p{
+        font-size: 14px;
+    }
+    .hero_course_syllabus .container{
+        padding-top: 30px;
+    }
+    .hero_course_syllabus .mobile_banner{
+        height: 622px;
+    }
+    .hero_course_syllabus .tag_details{
+        justify-content: space-between !important;
+    }
+    .hero_course_syllabus .tag_details .port{
+       
+        margin-bottom: 20px;
+    }
+    .course_accordion_back .accordion .card .card-header {
+        flex-wrap: wrap;
+    }
+    .course_accordion_back .accordion .card .card-header h3{
+        flex-basis:100% ;
+        font-size: 14px;
+
+    }
+    .course_accordion_back .accordion .card .card-header h4{
+        flex-basis:100% ;
+        font-size: 14px;
+        padding-left: 25px;
+    }
+    .course_accordion_back .accordion .card .card-header .icon{
+        right: 14px;
+        width: 11px;
+        height: 7px;
+        top: 15px;
+        bottom: auto;
+    }
+    .course_syllabus_back{
+        margin-top: 44px;
+    }
+    .course_syllabus_back p{
+        text-align: left !important;
+        font-size: 14px !important;
+    }
+    .course_syllabus_back .syllabus_section h2{
+        text-align: center;
+    }
+    .course_syllabus_back .syllabus_section p{
+        text-align: center !important;
+    }
+    .course_accordion_back .accordion .card .card-body p{
+        text-align: left !important;
+    }
+}
+
+@media only screen and (max-width:350px){
+    .hero_course_syllabus .container p{
+        font-size: 12px;
+    }
+    .hero_course_syllabus .tag_details .port{
+        margin-right: 0;
+        font-size: 12px;
+    }
+    .hero_course_syllabus .tag_details .port img{
+        height: 14px;
+        margin-right: 4px;
+    }
+    .hero_course_syllabus .tag_details .port:last-child img{
+        height: 20px;
+    }
+}

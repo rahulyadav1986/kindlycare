@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KindlyCare::Live Courses</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container d-flex align-items-center justify-content-between flex-wrap">
+            <a href="" class="logo"><img src="images/main_logo.png" alt=""></a>
+            <div class="main_nav d-flex align-items-center flex-wrap" id="mobile_menu">
+                <div class="cat_wrap" onclick="cat_button()" id="cat_button">
+                    <div class="custom_button transparent no_border_bg" >
+                        <a href="javascript:void(0)" class="d-flex align-items-center justify-content-center">
+                            categories 
+                            <img src="images/down_arrow.svg" alt="">  
+                            <img src="images/up_arrow.svg" class="second" alt="">  
+                        </a>
+                    </div>
+                    <ul class="cat_list">
+                        <li><a href="">Pharmacy</a></li>
+                        <li><a href="">Medicine</a></li>
+                        <li><a href="">Biology</a></li>
+                        <li><a href="">Medical</a></li>
+                        <li><a href="">Bioinformatics</a></li>
+                        <li><a href="">Emotional Intelligence</a></li>
+                        <li><a href="">Mental Health</a></li>
+                        <li><a href="">Anatomy</a></li>
+                        <li><a href="">Nutrition</a></li>
+                    </ul>
+                </div>
+                
+                <ul class="navigation d-flex align-items-center">
+                    <li><a href="">categories</a></li>
+                    <li><a href="">Catelog</a></li>
+                    <li><a href="">live training</a></li>
+                    <li><a href="">certificate</a></li>
+                </ul>
+                <div class="header_search_box">
+                    <input type="text" placeholder="Search here" id="tags" onclick="auto_complete()" name="" id="">
+                    <button><img src="images/small_search.svg" alt=""></button>
+                    <button class="cross" id="auto_cross" onclick="auto_cross()"><img src="images/cross.png" alt=""></button>
+                    <ul class="auto_complete" id="auto_complete">
+                        <li> <a href=""><img src="images/small_search.png" alt=""><strong>Medical</strong>  Terminology</a> </li>
+                        <li><a href=""><img src="images/small_search.png" alt=""><strong>Medical</strong> Device</a> </li>
+                        <li><a href=""><img src="images/small_search.png" alt=""><strong>Medical</strong> Transcription</a> </li>
+                        <li><a href=""><img src="images/small_search.png" alt=""><strong>Medical</strong> English vocabulary for medical professionals</a> </li>
+                        <li><a href=""><img src="images/chap.svg" alt=""><strong>Medical</strong> Coding Inpatient DRG</a> </li>
+                        <li><a href=""><img src="images/chap.svg" alt=""><strong>Medical</strong> English vocabulary</a> </li>
+                        <li><a href=""><img src="images/file.svg" alt=""><strong>Medical</strong> Transcription</a></li>
+                        <li><a href=""><img src="images/file.svg" alt=""><strong>Medical</strong> Terminology</a> </li>
+                        <li><a href=""><img src="images/file.svg" alt=""><strong>Medical</strong> Device</a> </li>
+                        <li><a href=""><img src="images/file.svg" alt=""><strong>Medical</strong> English vocabulary for medical professionals</a> </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right d-flex align-items-center">
+                <div class="cart"><img src="images/cart_icon.svg" alt=""></div>
+                <div onclick="mobileSearchPanel()" class="mobile_search d-flex align-items-center justify-content-center"><img src="images/small_search.png" alt=""></div>
+                <div id="mobileSearchPanel" class="mobile_search_panel d-flex align-items-center justify-content-center">
+                    <div class="main_panel d-flex align-items-center justify-content-center">
+                        <button class="mobile_cross d-flex align-items-center justify-content-center" id="mobile_cross" onclick="mobile_cross()"><img src="images/cross.png" alt=""></button>
+                        <div class="header_search_box">
+                            <input type="text" placeholder="Search here" id="tags" onclick="auto_complete()" name="" id="">
+                            <button><img src="images/small_search.svg" alt=""></button>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="custom_button" id="custom_button">
+                    <div class="after_login_back d-flex align-items-center" onclick="after_log_click()">
+                        Sam Keigh
+                        <img src="images/fc2.jpg" alt="">
+                    </div>
+                    <ul class="after_log_ovarlay">
+                        <li><a href="">My Account</a></li>
+                        <li><a href="">Logout</a></li>
+                    </ul>
+                </div>
+                
+                <div class="ham_cross_menu_back d-flex align-items-center justify-content-center" id="hamburger" onclick="ham_click()">
+                    <img src="images/hamburger.png" class="ham" alt="">
+                    <img src="images/cross.png" class="cross" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="hero_back_inner live d-flex align-items-center">
+        <div class="container">
+            <h1 class="d-flex align-items-center"><img src="images/live_red.svg" alt=""> Live Courses</h1>
+            <p>From quick, practical courses to comprehensive certifications, learn everything you need to know about the most sought-after business skills.</p>
+        </div>
+    </div>
+
+    <div class="course_section pt">
+        <div class="container">
+            <div class="main_section">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 common">
+                        <div class="portion">
+                            <div class="image_back">
+                                <img src="images/nc1.jpeg" alt="">
+                            </div>
+                            <div class="details">
+                                <span class="tag" style="background-color: #E8F8FD; color:#2CB7DF;">Pharmacy</span>
+                                <h3>Become a Pharmacy Technician</h3>
+                                <ul class="bottom_details">
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/clock.svg" alt="">20min
+                                        </div>
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/graduate.svg" alt="">Expert Level
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div>
+                                          <div class="port">Price</div>
+                                            <div class="port d-flex align-items-center">
+                                                <span>$250</span>
+                                                <i>$1000</i>
+                                            </div>  
+                                        </div>
+                                        <div class="custom_button small book"><a href="javascript:void(0);" class="d-flex align-items-center justify-content-center">Book Now</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 common">
+                        <div class="portion">
+                            <div class="image_back">
+                                <img src="images/nc2.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <span class="tag" style="background-color: #C7F1DD; color:#00C067;">Nutrition</span>
+                                <h3>UiPath - Level 1 Robotic Process Automation</h3>
+                                <ul class="bottom_details">
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/clock.svg" alt="">20min
+                                        </div>
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/graduate.svg" alt="">Expert Level
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div>
+                                          <div class="port">Price</div>
+                                            <div class="port d-flex align-items-center">
+                                                <span>$250</span>
+                                                <i>$1000</i>
+                                            </div>  
+                                        </div>
+                                        <div class="custom_button small book"><a href="javascript:void(0);" class="d-flex align-items-center justify-content-center">Book Now</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 common">
+                        <div class="portion">
+                            <div class="image_back">
+                                <img src="images/nc3.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <span class="tag" style="background-color: #FFE2EF; color:#FA2185;">Dentist</span>
+                                <h3>UiPath - Level 1 Robotic Process Automation</h3>
+                                <ul class="bottom_details">
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/clock.svg" alt="">20min
+                                        </div>
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/graduate.svg" alt="">Expert Level
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div>
+                                          <div class="port">Price</div>
+                                            <div class="port d-flex align-items-center">
+                                                <span>$250</span>
+                                                <i>$1000</i>
+                                            </div>  
+                                        </div>
+                                        <div class="custom_button small book"><a href="javascript:void(0);" class="d-flex align-items-center justify-content-center">Book Now</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 common">
+                        <div class="portion">
+                            <div class="image_back">
+                                <img src="images/nc4.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <span class="tag" style="background-color: #E8F8FD; color:#2CB7DF;">Pharmacy</span>
+                                <h3>UiPath - Level 1 Robotic Process Automation</h3>
+                                <ul class="bottom_details">
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/clock.svg" alt="">20min
+                                        </div>
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/graduate.svg" alt="">Expert Level
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div>
+                                          <div class="port">Price</div>
+                                            <div class="port d-flex align-items-center">
+                                                <span>$250</span>
+                                                <i>$1000</i>
+                                            </div>  
+                                        </div>
+                                        <div class="custom_button small book"><a href="javascript:void(0);" class="d-flex align-items-center justify-content-center">Book Now</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 common">
+                        <div class="portion">
+                            <div class="image_back">
+                                <img src="images/nc1.jpeg" alt="">
+                            </div>
+                            <div class="details">
+                                <span class="tag" style="background-color: #E8F8FD; color:#2CB7DF;">Pharmacy</span>
+                                <h3>Become a Pharmacy Technician</h3>
+                                <ul class="bottom_details">
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/clock.svg" alt="">20min
+                                        </div>
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/graduate.svg" alt="">Expert Level
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div>
+                                          <div class="port">Price</div>
+                                            <div class="port d-flex align-items-center">
+                                                <span>$250</span>
+                                                <i>$1000</i>
+                                            </div>  
+                                        </div>
+                                        <div class="custom_button small book"><a href="javascript:void(0);" class="d-flex align-items-center justify-content-center">Book Now</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 common">
+                        <div class="portion">
+                            <div class="image_back">
+                                <img src="images/nc2.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <span class="tag" style="background-color: #C7F1DD; color:#00C067;">Nutrition</span>
+                                <h3>UiPath - Level 1 Robotic Process Automation</h3>
+                                <ul class="bottom_details">
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/clock.svg" alt="">20min
+                                        </div>
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/graduate.svg" alt="">Expert Level
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div>
+                                          <div class="port">Price</div>
+                                            <div class="port d-flex align-items-center">
+                                                <span>$250</span>
+                                                <i>$1000</i>
+                                            </div>  
+                                        </div>
+                                        <div class="custom_button small book"><a href="javascript:void(0);" class="d-flex align-items-center justify-content-center">Book Now</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 common">
+                        <div class="portion">
+                            <div class="image_back">
+                                <img src="images/nc3.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <span class="tag" style="background-color: #FFE2EF; color:#FA2185;">Dentist</span>
+                                <h3>UiPath - Level 1 Robotic Process Automation</h3>
+                                <ul class="bottom_details">
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/clock.svg" alt="">20min
+                                        </div>
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/graduate.svg" alt="">Expert Level
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div>
+                                          <div class="port">Price</div>
+                                            <div class="port d-flex align-items-center">
+                                                <span>$250</span>
+                                                <i>$1000</i>
+                                            </div>  
+                                        </div>
+                                        <div class="custom_button small book"><a href="javascript:void(0);" class="d-flex align-items-center justify-content-center">Book Now</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 common">
+                        <div class="portion">
+                            <div class="image_back">
+                                <img src="images/nc4.jpg" alt="">
+                            </div>
+                            <div class="details">
+                                <span class="tag" style="background-color: #E8F8FD; color:#2CB7DF;">Pharmacy</span>
+                                <h3>UiPath - Level 1 Robotic Process Automation</h3>
+                                <ul class="bottom_details">
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/clock.svg" alt="">20min
+                                        </div>
+                                        <div class="port d-flex align-items-center">
+                                            <img src="images/graduate.svg" alt="">Expert Level
+                                        </div>
+                                    </li>
+                                    <li class="d-flex align-items-center justify-content-between">
+                                        <div>
+                                          <div class="port">Price</div>
+                                            <div class="port d-flex align-items-center">
+                                                <span>$250</span>
+                                                <i>$1000</i>
+                                            </div>  
+                                        </div>
+                                        <div class="custom_button small book"><a href="javascript:void(0);" class="d-flex align-items-center justify-content-center">Book Now</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    
+
+    <footer>
+        <div class="top">
+            <div class="container d-flex align-items-center justify-content-between flex-wrap">
+                <h2>Gain In-demand Skills . Level Up With Us.</h2>
+                <div class="custom_button">
+                    <a href="" class="d-flex align-items-center justify-content-center">Start Learning Now</a></div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="container d-flex align-items-center justify-content-between flex-wrap">
+                <a href="" class="logo"><img src="images/footer_logo.png" alt=""></a>
+                <div class="ft_menu d-flex">
+                    <li><a href="">Terms & Condition</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Education Services Policies</a></li>
+                </div>
+            </div>
+        </div>
+        <div class="copy d-flex justify-content-center">Copyright © 2021 robotics, Inc.</div>
+    </footer>
+
+
+    <div class="schedule_live_course_popup d-flex align-items-center justify-content-center" id="schedule_live_course_popup">
+        <div class="ovarlay"></div>
+        <div class="main_area">
+            <h2>Schedule Live Course</h2>
+            <ul class="tab_head_back owl-carousel">
+                <li class="tab_box tab_active" data-id="content1">
+                    <h4>Session 1</h4>
+                    2 Slots Available
+                </li>
+                <li class="tab_box" data-id="content2">
+                    <h4>Session 2</h4>
+                    2 Slots Available
+                </li>
+                <li class="tab_box" data-id="content3">
+                    <h4>Session 1</h4>
+                    2 Slots Available
+                </li>
+                <li class="tab_box" data-id="content4">
+                    <h4>Session 3</h4>
+                    2 Slots Available
+                </li>
+                <li class="tab_box" data-id="content5">
+                    <h4>Session 4</h4>
+                    2 Slots Available
+                </li>
+                <li class="tab_box" data-id="content6">
+                    <h4>Session 5</h4>
+                    2 Slots Available
+                </li>
+                <li class="tab_box" data-id="content7">
+                    <h4>Session 6</h4>
+                    2 Slots Available
+                </li>
+                <li class="tab_box" data-id="content8">
+                    <h4>Session 7</h4>
+                    2 Slots Available
+                </li>
+            </ul>
+            <div class="tab_content_area">
+                <div class="content_area content_active d-flex" id="content1">
+                    <div class="portion" style="background-image: url(images/lc_bg1.png);">
+                        <h3>Improving the Future of Health Care</h3>
+                        <div class="date_time_details d-flex align-items-center">
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-calendar-alt"></i>
+                                20 July 2021
+                            </div>
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-clock"></i>
+                                09:30 AM
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portion" style="background-image: url(images/lc_bg2.png);">
+                        <h3>Drug Discovery & Medicinal Chemistry</h3>
+                        <div class="date_time_details d-flex align-items-center">
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-calendar-alt"></i>
+                                20 July 2021
+                            </div>
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-clock"></i>
+                                09:30 AM
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portion" style="background-image: url(images/lc_bg1.png);">
+                        <h3>Improving the Future of Health Care</h3>
+                        <div class="date_time_details d-flex align-items-center">
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-calendar-alt"></i>
+                                20 July 2021
+                            </div>
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-clock"></i>
+                                09:30 AM
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_area d-flex" id="content2">
+                    <div class="portion" style="background-image: url(images/lc_bg1.png);">
+                        <h3>Improving the Future of Health Care</h3>
+                        <div class="date_time_details d-flex align-items-center">
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-calendar-alt"></i>
+                                20 July 2021
+                            </div>
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-clock"></i>
+                                09:30 AM
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portion" style="background-image: url(images/lc_bg2.png);">
+                        <h3>Drug Discovery & Medicinal Chemistry</h3>
+                        <div class="date_time_details d-flex align-items-center">
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-calendar-alt"></i>
+                                20 July 2021
+                            </div>
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-clock"></i>
+                                09:30 AM
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portion" style="background-image: url(images/lc_bg1.png);">
+                        <h3>Improving the Future of Health Care</h3>
+                        <div class="date_time_details d-flex align-items-center">
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-calendar-alt"></i>
+                                20 July 2021
+                            </div>
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-clock"></i>
+                                09:30 AM
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portion" style="background-image: url(images/lc_bg2.png);">
+                        <h3>Drug Discovery & Medicinal Chemistry</h3>
+                        <div class="date_time_details d-flex align-items-center">
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-calendar-alt"></i>
+                                20 July 2021
+                            </div>
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-clock"></i>
+                                09:30 AM
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portion" style="background-image: url(images/lc_bg1.png);">
+                        <h3>Improving the Future of Health Care</h3>
+                        <div class="date_time_details d-flex align-items-center">
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-calendar-alt"></i>
+                                20 July 2021
+                            </div>
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-clock"></i>
+                                09:30 AM
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content_area d-flex" id="content3">
+                    <div class="portion" style="background-image: url(images/lc_bg1.png);">
+                        <h3>Improving the Future of Health Care</h3>
+                        <div class="date_time_details d-flex align-items-center">
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-calendar-alt"></i>
+                                20 July 2021
+                            </div>
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-clock"></i>
+                                09:30 AM
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portion" style="background-image: url(images/lc_bg2.png);">
+                        <h3>Drug Discovery & Medicinal Chemistry</h3>
+                        <div class="date_time_details d-flex align-items-center">
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-calendar-alt"></i>
+                                20 July 2021
+                            </div>
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-clock"></i>
+                                09:30 AM
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="content_area d-flex" id="content4">
+                    <div class="portion" style="background-image: url(images/lc_bg1.png);">
+                        <h3>Improving the Future of Health Care</h3>
+                        <div class="date_time_details d-flex align-items-center">
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-calendar-alt"></i>
+                                20 July 2021
+                            </div>
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-clock"></i>
+                                09:30 AM
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portion" style="background-image: url(images/lc_bg2.png);">
+                        <h3>Drug Discovery & Medicinal Chemistry</h3>
+                        <div class="date_time_details d-flex align-items-center">
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-calendar-alt"></i>
+                                20 July 2021
+                            </div>
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-clock"></i>
+                                09:30 AM
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portion" style="background-image: url(images/lc_bg1.png);">
+                        <h3>Improving the Future of Health Care</h3>
+                        <div class="date_time_details d-flex align-items-center">
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-calendar-alt"></i>
+                                20 July 2021
+                            </div>
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-clock"></i>
+                                09:30 AM
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content_area d-flex" id="content5">
+                    <div class="portion" style="background-image: url(images/lc_bg1.png);">
+                        <h3>Improving the Future of Health Care</h3>
+                        <div class="date_time_details d-flex align-items-center">
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-calendar-alt"></i>
+                                20 July 2021
+                            </div>
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-clock"></i>
+                                09:30 AM
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="content_area d-flex" id="content6">
+                    <div class="portion" style="background-image: url(images/lc_bg1.png);">
+                        <h3>Improving the Future of Health Care</h3>
+                        <div class="date_time_details d-flex align-items-center">
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-calendar-alt"></i>
+                                20 July 2021
+                            </div>
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-clock"></i>
+                                09:30 AM
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portion" style="background-image: url(images/lc_bg2.png);">
+                        <h3>Drug Discovery & Medicinal Chemistry</h3>
+                        <div class="date_time_details d-flex align-items-center">
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-calendar-alt"></i>
+                                20 July 2021
+                            </div>
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-clock"></i>
+                                09:30 AM
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portion" style="background-image: url(images/lc_bg1.png);">
+                        <h3>Improving the Future of Health Care</h3>
+                        <div class="date_time_details d-flex align-items-center">
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-calendar-alt"></i>
+                                20 July 2021
+                            </div>
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-clock"></i>
+                                09:30 AM
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portion" style="background-image: url(images/lc_bg1.png);">
+                        <h3>Improving the Future of Health Care</h3>
+                        <div class="date_time_details d-flex align-items-center">
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-calendar-alt"></i>
+                                20 July 2021
+                            </div>
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-clock"></i>
+                                09:30 AM
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content_area d-flex" id="content7">
+                    <div class="portion" style="background-image: url(images/lc_bg1.png);">
+                        <h3>Improving the Future of Health Care</h3>
+                        <div class="date_time_details d-flex align-items-center">
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-calendar-alt"></i>
+                                20 July 2021
+                            </div>
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-clock"></i>
+                                09:30 AM
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portion" style="background-image: url(images/lc_bg2.png);">
+                        <h3>Drug Discovery & Medicinal Chemistry</h3>
+                        <div class="date_time_details d-flex align-items-center">
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-calendar-alt"></i>
+                                20 July 2021
+                            </div>
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-clock"></i>
+                                09:30 AM
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="content_area d-flex" id="content8">
+                    <div class="portion" style="background-image: url(images/lc_bg1.png);">
+                        <h3>Improving the Future of Health Care</h3>
+                        <div class="date_time_details d-flex align-items-center">
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-calendar-alt"></i>
+                                20 July 2021
+                            </div>
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-clock"></i>
+                                09:30 AM
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portion" style="background-image: url(images/lc_bg2.png);">
+                        <h3>Drug Discovery & Medicinal Chemistry</h3>
+                        <div class="date_time_details d-flex align-items-center">
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-calendar-alt"></i>
+                                20 July 2021
+                            </div>
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-clock"></i>
+                                09:30 AM
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portion" style="background-image: url(images/lc_bg1.png);">
+                        <h3>Improving the Future of Health Care</h3>
+                        <div class="date_time_details d-flex align-items-center">
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-calendar-alt"></i>
+                                20 July 2021
+                            </div>
+                            <div class="port d-flex align-items-center">
+                                <i class="fas fa-clock"></i>
+                                09:30 AM
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+            </div>
+            <div class="buttons_back d-flex align-items-center justify-content-center">
+                <div class="custom_button cancleButton">
+                    <a href="javascript:void(0);" onclick="live_course_close()" class="d-flex align-items-center justify-content-center">Cancel</a>
+                </div>
+                <div class="custom_button customPrevBtn"><a href="javascript:void(0);" class="d-flex align-items-center justify-content-center">Previous</a></div>
+                <div class="custom_button customNextBtn"><a href="javascript:void(0);" class="d-flex align-items-center justify-content-center">
+                    Next <span class="sessionBtn"> Session</span> </a>
+                </div>
+                <div class="custom_button customBookBtn"><a href="" class="d-flex align-items-center justify-content-center">Book Now</a></div>
+            </div>
+        </div>
+    </div>
+
+
+
+   
+    
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="https://kit.fontawesome.com/a992d6b247.js" crossorigin="anonymous"></script>
+    <script src="js/app2.js"></script>
+
+</body>
+
+</html>
